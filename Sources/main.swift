@@ -1,2 +1,13 @@
-// Created a basic Swift entry point file
-print("Hello, Swift from CI!")
+import SwiftUI
+import AppKit
+
+@main
+struct NewaippApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+        .windowStyle(.hiddenTitleBar)
+        .windowResizability(.contentSize)
+    }
+}

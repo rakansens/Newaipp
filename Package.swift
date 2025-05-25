@@ -1,9 +1,15 @@
 // swift-tools-version: 5.9
-// Created a basic Swift Package Manager configuration file
+// Mac Notes App with AI Diagram Generation
 import PackageDescription
 
 let package = Package(
     name: "Newaipp",
+    platforms: [
+        .macOS(.v13)
+    ],
+    products: [
+        .executable(name: "Newaipp", targets: ["Newaipp"])
+    ],
     targets: [
         .executableTarget(
             name: "Newaipp",
